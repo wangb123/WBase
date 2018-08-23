@@ -42,6 +42,15 @@ public abstract class WFrag<Binding extends ViewDataBinding> extends Fragment im
      */
     private boolean isInvisible = true;
 
+    @Override
+    public void onCreate(@android.support.annotation.Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        if (getArguments() != null) {
+            getParams(getArguments());
+        }
+    }
+
 
     /**
      * 生命周期函数，这里主要分三种情况
@@ -154,6 +163,8 @@ public abstract class WFrag<Binding extends ViewDataBinding> extends Fragment im
     public void onPostViewCreate() {
     }
 
+    public void getParams(Bundle args) {
+    }
 
     /**
      * 布局文件
