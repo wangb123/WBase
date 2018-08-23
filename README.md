@@ -2,7 +2,7 @@
 ####使用方法：
 
 ```groovy
-	implementation 'org.wbing:base:0.1.2'
+	implementation 'org.wbing:base:0.1.4'
 	implementation "$api_kt"//部分代码依赖kotlin，所以需要依赖
 	implementation "$api_appcompat"//使用了appcompat兼容包
 ```
@@ -42,6 +42,12 @@
 
 ---
 ###TODO list
+##### 0.1.4
+- To enable the new data binding compiler, add the following option to your gradle.properties file:
+```groovy
+	android.databinding.enableV2=true
+```
+
 ##### 0.1.1
 - WAct不要在onCreate中设置背景颜色，留给用户去设置，可能会造成页面透明
 - ViewHolder返回值由Unit改为Boolean
