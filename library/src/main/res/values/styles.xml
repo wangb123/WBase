@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="WBaseNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="WBaseTranslucent" parent="WBaseNoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="WBaseLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_066</item>
+        <item name="android:background">@color/color_line</item>
+    </style>
+
+    <style name="WBaseSpace">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_10</item>
+        <item name="android:background">@color/color_space</item>
+    </style>
+
+    <style name="WBaseButton">
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="WBaseAnimBottom">
+        <item name="android:windowEnterAnimation">@anim/w_base_enter_bottom</item>
+        <item name="android:windowExitAnimation">@anim/w_base_exit_bottom</item>
+    </style>
+
+    <style name="WBaseAnimTop">
+        <item name="android:windowEnterAnimation">@anim/w_base_enter_top</item>
+        <item name="android:windowExitAnimation">@anim/w_base_exit_top</item>
+    </style>
+</resources>

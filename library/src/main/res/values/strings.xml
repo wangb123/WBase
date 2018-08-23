@@ -1,0 +1,5 @@
+<resources>
+    <string name="w_base_app_name">WBase</string>
+    <string name="w_base_app_bar">tool_bar_layout</string>
+    <string name="w_base_double_back_ensure_hint">再次点击返回，退出应用</string>
+</resources>

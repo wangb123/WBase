@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+    <color name="black">#FF000000</color>
+    <color name="color_111">#FF111111</color>
+    <color name="color_333">#FF333333</color>
+    <color name="color_666">#FF666666</color>
+    <color name="color_999">#FF999999</color>
+    <color name="color_bd">#FFBDBDBD</color>
+    <color name="color_c5">#FFC5C5C5</color>
+    <color name="color_ccc">#FFCCCCCC</color>
+    <color name="color_d8">#FFD8D8D8</color>
+    <color name="color_ddd">#FFDDDDDD</color>
+    <color name="color_e5">#FFE5E5E5</color>
+    <color name="color_ec">#FFECECEC</color>
+    <color name="color_eee">#FFEEEEEE</color>
+    <color name="color_ef">#FFEFEFEF</color>
+    <color name="color_f5">#FFF5F5F5</color>
+    <color name="color_fc">#FFFCFCFC</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="color_brand">#FF0077</color>
+    <color name="color_control">#F56453</color>
+    <color name="color_control_press">#f47d70</color>
+    <color name="color_control_disable">@color/color_999</color>
+    <color name="color_half">#11000000</color>
+    <color name="color_text">@color/color_111</color>
+    <color name="color_text_sub">@color/color_666</color>
+    <color name="color_text_dark">@color/color_999</color>
+    <color name="color_space">@color/color_ec</color>
+    <color name="color_line">@color/color_e5</color>
+    <color name="color_bg">@color/color_fc</color>
+</resources>
