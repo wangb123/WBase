@@ -13,7 +13,7 @@ android {
     compileSdkVersion rootProject.ext.config_compileSdkVersion
     buildToolsVersion rootProject.ext.config_buildToolsVersion
     defaultConfig {
-        applicationId "com.yaolan.expect"
+        applicationId "org.wbing.app_base"
         minSdkVersion 15
         targetSdkVersion rootProject.ext.config_targetSdkVersion
         versionCode 1

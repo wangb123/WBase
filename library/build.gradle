@@ -48,9 +48,7 @@ dependencies {
     implementation "$api_appcompat"
 
 }
-kapt {
-    generateStubs = true
-}
+
 repositories {
     mavenCentral()
 }
