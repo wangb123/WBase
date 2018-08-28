@@ -19,7 +19,9 @@ internal class ViewHolder<Binding : ViewDataBinding> {
     var call: Call<Message, Boolean>? = null
 
     constructor(activity: Activity, layout: Int) {
-        binding = DataBindingUtil.setContentView(activity, layout)
+        if(layout>0){
+            binding = DataBindingUtil.setContentView(activity, layout)
+        }
     }
 
     constructor(inflater: LayoutInflater, layout: Int, parent: ViewGroup?) {

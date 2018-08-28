@@ -42,6 +42,10 @@
 
 ---
 ###TODO list
+
+##### 0.1.5
+- WView在不设置布局的时候没有ViewHolder
+
 ##### 0.1.4
 - To enable the new data binding compiler, add the following option to your gradle.properties file:
 ```groovy

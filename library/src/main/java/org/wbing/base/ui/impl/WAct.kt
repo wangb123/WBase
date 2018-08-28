@@ -55,11 +55,8 @@ abstract class WAct<Binding : ViewDataBinding> : AppCompatActivity(), WView<Bind
         //获取参数
         getParams(intent)
         //设置布局
-        val layout = layoutId()
-        if (layout > 0) {
-            holder = ViewHolder(this, layout)
-            holder?.call = this
-        }
+        holder = ViewHolder(this, layoutId())
+        holder?.call = this
     }
 
     /**

@@ -63,11 +63,11 @@ public abstract class WFrag<Binding extends ViewDataBinding> extends Fragment im
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         isFirst = true;
         int layout = layoutId();
-        //情景1
-        if (layout <= 0) {
-            postViewCreate();
-            return super.onCreateView(inflater, container, savedInstanceState);
-        }
+        //情景1,移除
+//        if (layout <= 0) {
+//            postViewCreate();
+//            return super.onCreateView(inflater, container, savedInstanceState);
+//        }
 
         //情景2
         if (holder != null) {
@@ -80,6 +80,8 @@ public abstract class WFrag<Binding extends ViewDataBinding> extends Fragment im
                     postViewCreate();
                     return root;
                 }
+            } else {
+                return super.onCreateView(inflater, container, savedInstanceState);
             }
         }
         //情景3
