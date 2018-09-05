@@ -37,4 +37,13 @@
         <item name="android:windowEnterAnimation">@anim/w_base_enter_top</item>
         <item name="android:windowExitAnimation">@anim/w_base_exit_top</item>
     </style>
+
+    <style name="WBaseButton.Back">
+        <item name="android:layout_width">@dimen/dp_48</item>
+        <item name="android:layout_height">@dimen/dp_48</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:src">@drawable/base_ic_back</item>
+        <item name="android:onClick">onBackPressed</item>
+        <item name="android:contentDescription">返回</item>
+    </style>
 </resources>

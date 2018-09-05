@@ -10,6 +10,7 @@ import android.os.Message
 import android.os.SystemClock
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.app.AppCompatDelegate
+import android.view.View
 import android.widget.Toast
 import org.wbing.base.R
 import org.wbing.base.util.StatusBarUtils
@@ -172,7 +173,7 @@ abstract class WAct<Binding : ViewDataBinding> : AppCompatActivity(), WView<Bind
     /**
      * 处理IView中handle的消息
      */
-    override fun call(param: Message): Boolean {
+    override fun call(msg: Message): Boolean {
         return false
     }
 
@@ -181,6 +182,13 @@ abstract class WAct<Binding : ViewDataBinding> : AppCompatActivity(), WView<Bind
      */
     open fun getParams(intent: Intent?) {
 
+    }
+
+    /**
+     * 默认返回
+     */
+    open fun onBackPressed(view: View) {
+        onBackPressed()
     }
 
     /**

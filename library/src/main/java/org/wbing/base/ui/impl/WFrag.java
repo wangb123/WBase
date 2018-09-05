@@ -63,7 +63,7 @@ public abstract class WFrag<Binding extends ViewDataBinding> extends Fragment im
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         isFirst = true;
         int layout = layoutId();
-        //情景1,移除
+        //情景1,移除,会导致没有holder
 //        if (layout <= 0) {
 //            postViewCreate();
 //            return super.onCreateView(inflater, container, savedInstanceState);
@@ -77,7 +77,7 @@ public abstract class WFrag<Binding extends ViewDataBinding> extends Fragment im
                 ViewParent parent = root.getParent();
                 if (parent instanceof ViewGroup) {
                     ((ViewGroup) parent).removeView(root);
-                    postViewCreate();
+//                    postViewCreate();view已经被初始化过了，不需要
                     return root;
                 }
             } else {
