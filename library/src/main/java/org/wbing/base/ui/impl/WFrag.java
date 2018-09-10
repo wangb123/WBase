@@ -228,7 +228,7 @@ public abstract class WFrag<Binding extends ViewDataBinding> extends Fragment im
      */
     private void postViewCreate() {
         isPrepared = true;
-        lazyLoad();
         onPostViewCreate();
+        lazyLoad();
     }
 }
