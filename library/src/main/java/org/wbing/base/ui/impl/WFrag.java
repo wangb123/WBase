@@ -78,8 +78,8 @@ public abstract class WFrag<Binding extends ViewDataBinding> extends Fragment im
                 if (parent instanceof ViewGroup) {
                     ((ViewGroup) parent).removeView(root);
 //                    postViewCreate();view已经被初始化过了，不需要
-                    return root;
                 }
+                return root;
             } else {
                 return super.onCreateView(inflater, container, savedInstanceState);
             }
